@@ -106,20 +106,20 @@
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">1</span>
       <h2 class="text-2xl font-bold">🚨 O problema do "só escreve o código"</h2>
     </div>
-    <p class="text-neutral-300 mb-6">O anti-padrão mais comum e mais caro no desenvolvimento com agentes de IA é simples: pedir para o agente implementar algo sem antes definir o que "algo" significa. Parece óbvio evitar, mas a velocidade aparente que o agente oferece seduz desenvolvedores a pular etapas.</p>
+    <p class="text-neutral-300 mb-6">O anti-padrêo mais comum e mais caro no desenvolvimento com agentes de IA é simples: pedir para o agente implementar algo sem antes definir o que "algo" significa. Parece óbvio evitar, mas a velocidade aparente que o agente oferece seduz desenvolvedores a pular etapas.</p>
 
     <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5 mb-5">
       <h3 class="text-emerald-400 font-semibold mb-3">Por que isso acontece</h3>
       <ul class="space-y-2 text-neutral-300 text-sm">
-        <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-0.5">→</span><span>O agente responde imediatamente com código plausível, criando a ilusão de progresso</span></li>
-        <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-0.5">→</span><span>Requisitos vagos são preenchidos com suposições razoáveis — mas raramente corretas</span></li>
+        <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-0.5">→</span><span>O agente responde imediatamente com código plausível, criando a ilusêo de progresso</span></li>
+        <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-0.5">→</span><span>Requisitos vagos sêo preenchidos com suposições razoáveis — mas raramente corretas</span></li>
         <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-0.5">→</span><span>O custo real aparece horas depois, quando o código precisa ser reescrito</span></li>
-        <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-0.5">→</span><span>Cada sessão de reescrita come tokens e tempo que poderiam ter sido evitados</span></li>
+        <li class="flex items-start space-x-2"><span class="text-emerald-400 mt-0.5">→</span><span>Cada sessêo de reescrita come tokens e tempo que poderiam ter sido evitados</span></li>
       </ul>
     </div>
 
     <div class="bg-dark-700/50 rounded-lg p-5">
-      <h3 class="text-neutral-300 font-semibold mb-3">Comparação: com e sem método</h3>
+      <h3 class="text-neutral-300 font-semibold mb-3">Comparaçêo: com e sem método</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
         <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
           <p class="text-red-400 font-semibold mb-2">Sem método</p>
@@ -137,7 +137,7 @@
             <li>Brainstorm: "Que tipo de auth?"</li>
             <li>→ Spec: OAuth com Google</li>
             <li>→ Plano aprovado</li>
-            <li>→ Implementação correta</li>
+            <li>→ Implementaçêo correta</li>
             <li class="text-emerald-400">Custo: 20 min extras de spec</li>
           </ul>
         </div>
@@ -149,9 +149,9 @@
   <section class="bg-dark-800 rounded-xl border border-dark-600 p-8">
     <div class="flex items-center space-x-4 mb-6">
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">2</span>
-      <h2 class="text-2xl font-bold">⚙️ O que são Skills e como moldam o agente</h2>
+      <h2 class="text-2xl font-bold">⚙️ O que sêo Skills e como moldam o agente</h2>
     </div>
-    <p class="text-neutral-300 mb-6">Skills são arquivos de texto especialmente formatados (SKILL.md) que são injetados no contexto do agente via sistema de prompts. Eles funcionam como instruções persistentes que moldam como o agente responde a situações específicas — sem precisar repetir as mesmas instruções toda sessão.</p>
+    <p class="text-neutral-300 mb-6">Skills sêo arquivos de texto especialmente formatados (SKILL.md) que sêo injetados no contexto do agente via sistema de prompts. Eles funcionam como instruções persistentes que moldam como o agente responde a situações específicas — sem precisar repetir as mesmas instruções toda sessêo.</p>
 
     <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5 mb-5">
       <h3 class="text-emerald-400 font-semibold mb-3">Como uma skill funciona tecnicamente</h3>
@@ -170,11 +170,11 @@
       <h3 class="text-blue-400 font-semibold mb-3">O que o Superpowers oferece out-of-the-box</h3>
       <ul class="space-y-2 text-neutral-300 text-sm">
         <li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span><strong>brainstorming</strong> — extrai specs de conversas vagas</span></li>
-        <li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span><strong>writing-plans</strong> — cria planos detalhados de implementação</span></li>
+        <li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span><strong>writing-plans</strong> — cria planos detalhados de implementaçêo</span></li>
         <li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span><strong>tdd</strong> — força o ciclo red-green-refactor</span></li>
-        <li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span><strong>executing-plans</strong> — execução com checkpoints humanos</span></li>
+        <li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span><strong>executing-plans</strong> — execuçêo com checkpoints humanos</span></li>
         <li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span><strong>debugging</strong> — processo sistemático de 4 fases</span></li>
-        <li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span><strong>code-review</strong> — revisão estruturada contra o plano</span></li>
+        <li class="flex items-start space-x-2"><span class="text-blue-400">•</span><span><strong>code-review</strong> — revisêo estruturada contra o plano</span></li>
       </ul>
     </div>
   </section>
@@ -183,9 +183,9 @@
   <section class="bg-dark-800 rounded-xl border border-dark-600 p-8">
     <div class="flex items-center space-x-4 mb-6">
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">3</span>
-      <h2 class="text-2xl font-bold">📦 Instalação e configuração por plataforma</h2>
+      <h2 class="text-2xl font-bold">📦 Instalaçêo e configuraçêo por plataforma</h2>
     </div>
-    <p class="text-neutral-300 mb-6">O Superpowers é um zero-dependency plugin — não precisa de nenhuma ferramenta externa além do harness de agente que você já usa. A instalação varia conforme a plataforma, mas o conceito é o mesmo: copiar os arquivos SKILL.md para o lugar certo e configurar os hooks.</p>
+    <p class="text-neutral-300 mb-6">O Superpowers é um zero-dependency plugin — nêo precisa de nenhuma ferramenta externa além do harness de agente que você já usa. A instalaçêo varia conforme a plataforma, mas o conceito é o mesmo: copiar os arquivos SKILL.md para o lugar certo e configurar os hooks.</p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
       <div class="bg-dark-700/50 rounded-lg p-4 border border-dark-600">
@@ -210,7 +210,7 @@
 
     <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-5">
       <h3 class="text-yellow-400 font-semibold mb-2">Dica importante</h3>
-      <p class="text-neutral-300 text-sm">O sync.sh copia os arquivos para o local correto de cada harness. Execute-o após cada atualização do Superpowers para manter as skills sincronizadas. O script detecta automaticamente qual plataforma você está usando.</p>
+      <p class="text-neutral-300 text-sm">O sync.sh copia os arquivos para o local correto de cada harness. Execute-o após cada atualizaçêo do Superpowers para manter as skills sincronizadas. O script detecta automaticamente qual plataforma você está usando.</p>
     </div>
   </section>
 
@@ -220,14 +220,14 @@
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">4</span>
       <h2 class="text-2xl font-bold">🔗 Como os hooks funcionam</h2>
     </div>
-    <p class="text-neutral-300 mb-6">Hooks são scripts executados automaticamente pelo harness em momentos específicos da sessão. Diferente das skills (que moldam o comportamento via texto), os hooks executam código real — scripts bash, Python ou qualquer linguagem — e podem modificar inputs, validar outputs e registrar ações.</p>
+    <p class="text-neutral-300 mb-6">Hooks sêo scripts executados automaticamente pelo harness em momentos específicos da sessêo. Diferente das skills (que moldam o comportamento via texto), os hooks executam código real — scripts bash, Python ou qualquer linguagem — e podem modificar inputs, validar outputs e registrar ações.</p>
 
     <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5 mb-5">
       <h3 class="text-emerald-400 font-semibold mb-3">Tipos de hooks no Claude Code</h3>
       <ul class="space-y-3 text-neutral-300 text-sm">
         <li class="flex items-start space-x-3">
           <span class="bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded text-xs font-mono flex-shrink-0">PreToolUse</span>
-          <span>Executa antes de uma ferramenta. Pode bloquear a execução se retornar exit code não-zero.</span>
+          <span>Executa antes de uma ferramenta. Pode bloquear a execuçêo se retornar exit code nêo-zero.</span>
         </li>
         <li class="flex items-start space-x-3">
           <span class="bg-blue-500/20 text-blue-400 px-2 py-0.5 rounded text-xs font-mono flex-shrink-0">PostToolUse</span>
@@ -241,7 +241,7 @@
     </div>
 
     <div class="bg-dark-700/50 rounded-lg p-5">
-      <h3 class="text-neutral-300 font-semibold mb-2">Configuração em settings.json</h3>
+      <h3 class="text-neutral-300 font-semibold mb-2">Configuraçêo em settings.json</h3>
       <pre class="text-sm text-neutral-300 font-mono overflow-x-auto"><code>{
   "hooks": {
     "PreToolUse": [
@@ -260,7 +260,7 @@
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">5</span>
       <h2 class="text-2xl font-bold">🗺️ O fluxo básico do Superpowers</h2>
     </div>
-    <p class="text-neutral-300 mb-6">O Superpowers organiza o desenvolvimento em cinco fases sequenciais. Cada fase tem um artefato de saída que serve de input para a próxima. Pular fases não economiza tempo — apenas adia o custo de retrabalho para um momento em que o retrabalho é mais caro.</p>
+    <p class="text-neutral-300 mb-6">O Superpowers organiza o desenvolvimento em cinco fases sequenciais. Cada fase tem um artefato de saída que serve de input para a próxima. Pular fases nêo economiza tempo — apenas adia o custo de retrabalho para um momento em que o retrabalho é mais caro.</p>
 
     <div class="space-y-3 mb-5">
       <div class="flex items-start space-x-4 bg-dark-700/50 rounded-lg p-4">
@@ -274,7 +274,7 @@
         <span class="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
         <div>
           <p class="font-semibold text-neutral-100">Plan</p>
-          <p class="text-neutral-400 text-sm">Spec → plano de tarefas de 2-5 min com verificação</p>
+          <p class="text-neutral-400 text-sm">Spec → plano de tarefas de 2-5 min com verificaçêo</p>
         </div>
       </div>
       <div class="flex items-start space-x-4 bg-dark-700/50 rounded-lg p-4">
@@ -288,7 +288,7 @@
         <span class="w-8 h-8 rounded-full bg-yellow-500/20 text-yellow-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
         <div>
           <p class="font-semibold text-neutral-100">Review</p>
-          <p class="text-neutral-400 text-sm">Revisão em 2 estágios: spec + qualidade</p>
+          <p class="text-neutral-400 text-sm">Revisêo em 2 estágios: spec + qualidade</p>
         </div>
       </div>
       <div class="flex items-start space-x-4 bg-dark-700/50 rounded-lg p-4">
@@ -302,7 +302,7 @@
 
     <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
       <p class="text-yellow-400 text-sm font-semibold">Princípio fundamental</p>
-      <p class="text-neutral-300 text-sm mt-1">Cada fase valida a anterior. Você não começa o TDD sem plano aprovado. Você não faz review sem testes passando. O fluxo é uma sequência com gates, não uma sugestão.</p>
+      <p class="text-neutral-300 text-sm mt-1">Cada fase valida a anterior. Você nêo começa o TDD sem plano aprovado. Você nêo faz review sem testes passando. O fluxo é uma sequência com gates, nêo uma sugestêo.</p>
     </div>
   </section>
 
@@ -312,18 +312,18 @@
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">6</span>
       <h2 class="text-2xl font-bold">🚀 Primeiros passos: verificando que funciona</h2>
     </div>
-    <p class="text-neutral-300 mb-6">Depois de instalar o Superpowers, vale 5 minutos para verificar que tudo está funcionando corretamente antes de depender das skills em um projeto real. Uma instalação silenciosamente incorreta é pior do que uma instalação visivelmente quebrada.</p>
+    <p class="text-neutral-300 mb-6">Depois de instalar o Superpowers, vale 5 minutos para verificar que tudo está funcionando corretamente antes de depender das skills em um projeto real. Uma instalaçêo silenciosamente incorreta é pior do que uma instalaçêo visivelmente quebrada.</p>
 
     <div class="bg-dark-700/50 rounded-lg p-5 mb-5">
       <h3 class="text-neutral-300 font-semibold mb-3">Smoke test básico</h3>
       <ol class="space-y-3 text-neutral-300 text-sm">
         <li class="flex items-start space-x-3">
           <span class="text-emerald-400 font-bold flex-shrink-0">1.</span>
-          <span>Abra uma nova sessão no seu harness</span>
+          <span>Abra uma nova sessêo no seu harness</span>
         </li>
         <li class="flex items-start space-x-3">
           <span class="text-emerald-400 font-bold flex-shrink-0">2.</span>
-          <span>Digite: <code class="bg-dark-600 px-1 rounded text-xs">quais skills estão disponíveis?</code></span>
+          <span>Digite: <code class="bg-dark-600 px-1 rounded text-xs">quais skills estêo disponíveis?</code></span>
         </li>
         <li class="flex items-start space-x-3">
           <span class="text-emerald-400 font-bold flex-shrink-0">3.</span>
@@ -341,8 +341,8 @@
     </div>
 
     <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
-      <p class="text-red-400 font-semibold text-sm">Se não funcionar</p>
-      <p class="text-neutral-300 text-sm mt-1">Verifique se os arquivos SKILL.md estão no diretório correto para seu harness. Para Claude Code: <code class="bg-dark-700 px-1 rounded">~/.claude/commands/</code>. Execute o sync.sh novamente e reinicie a sessão.</p>
+      <p class="text-red-400 font-semibold text-sm">Se nêo funcionar</p>
+      <p class="text-neutral-300 text-sm mt-1">Verifique se os arquivos SKILL.md estêo no diretório correto para seu harness. Para Claude Code: <code class="bg-dark-700 px-1 rounded">~/.claude/commands/</code>. Execute o sync.sh novamente e reinicie a sessêo.</p>
     </div>
   </section>
 
@@ -350,12 +350,12 @@
   <section class="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-8">
     <h2 class="text-xl font-bold mb-4">Resumo do Módulo 1.1</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Identifiquei o anti-padrão "só escreve o código" e seu custo real</span></div>
-      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Entendi o que são skills e como elas moldam o comportamento do agente</span></div>
+      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Identifiquei o anti-padrêo "só escreve o código" e seu custo real</span></div>
+      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Entendi o que sêo skills e como elas moldam o comportamento do agente</span></div>
       <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Instalei e configurei o Superpowers na minha plataforma</span></div>
       <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Compreendi como hooks funcionam e quando usá-los</span></div>
       <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Conheço o fluxo completo brainstorm→plan→TDD→review→merge</span></div>
-      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Verifiquei que a instalação está funcionando com o smoke test</span></div>
+      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Verifiquei que a instalaçêo está funcionando com o smoke test</span></div>
     </div>
     <div class="flex items-center justify-between p-4 bg-dark-800 rounded-lg mb-4">
       <span class="text-neutral-400 text-sm">Próximo módulo: <strong class="text-neutral-100">1.2 — Brainstorming antes do código</strong></span>

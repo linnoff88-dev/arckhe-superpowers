@@ -81,7 +81,7 @@
       </div>
     </div>
     <div class="bg-dark-700/50 rounded-lg p-4">
-      <p class="text-neutral-300 text-sm">Worktrees são um recurso nativo do git — não uma ferramenta externa. O Superpowers apenas automatiza sua criação e configuração via a skill using-git-worktrees.</p>
+      <p class="text-neutral-300 text-sm">Worktrees sêo um recurso nativo do git — nêo uma ferramenta externa. O Superpowers apenas automatiza sua criaçêo e configuraçêo via a skill using-git-worktrees.</p>
     </div>
   </section>
 
@@ -90,7 +90,7 @@
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">2</span>
       <h2 class="text-2xl font-bold">⚙️ Setup automático com using-git-worktrees</h2>
     </div>
-    <p class="text-neutral-300 mb-6">A skill using-git-worktrees instrui o agente a criar worktrees com os parâmetros corretos, seguindo a convenção de nomenclatura do projeto. Você apenas especifica o nome da feature e o agente cria o diretório, o branch e configura tudo automaticamente.</p>
+    <p class="text-neutral-300 mb-6">A skill using-git-worktrees instrui o agente a criar worktrees com os parâmetros corretos, seguindo a convençêo de nomenclatura do projeto. Você apenas especifica o nome da feature e o agente cria o diretório, o branch e configura tudo automaticamente.</p>
     <div class="bg-dark-700/50 rounded-lg p-5 mb-5">
       <h3 class="text-neutral-300 font-semibold mb-2">Comandos gerados automaticamente</h3>
       <pre class="text-neutral-300 text-sm font-mono overflow-x-auto"><code># Para a feature "auth-oauth"
@@ -102,8 +102,8 @@ git worktree add ../projeto-auth-oauth -b feature/auth-oauth
 # mesmo repositório remoto</code></pre>
     </div>
     <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
-      <p class="text-blue-400 font-semibold text-sm">Convenção de nomenclatura</p>
-      <p class="text-neutral-300 text-sm mt-1">Por padrão: diretório irmão com sufixo da feature (<code class="bg-dark-700 px-1 rounded">../projeto-nome-feature</code>). A skill detecta o nome do projeto atual e mantém consistência.</p>
+      <p class="text-blue-400 font-semibold text-sm">Convençêo de nomenclatura</p>
+      <p class="text-neutral-300 text-sm mt-1">Por padrêo: diretório irmêo com sufixo da feature (<code class="bg-dark-700 px-1 rounded">../projeto-nome-feature</code>). A skill detecta o nome do projeto atual e mantém consistência.</p>
     </div>
   </section>
 
@@ -112,19 +112,19 @@ git worktree add ../projeto-auth-oauth -b feature/auth-oauth
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">3</span>
       <h2 class="text-2xl font-bold">🏁 finishing-a-development-branch: merge, PR ou descarte</h2>
     </div>
-    <p class="text-neutral-300 mb-6">Após implementar uma feature na worktree, é hora de decidir o destino da branch. A skill finishing-a-development-branch guia esse processo com critérios claros para cada decisão — e inclui a limpeza da worktree ao final.</p>
+    <p class="text-neutral-300 mb-6">Após implementar uma feature na worktree, é hora de decidir o destino da branch. A skill finishing-a-development-branch guia esse processo com critérios claros para cada decisêo — e inclui a limpeza da worktree ao final.</p>
     <div class="space-y-3 mb-5">
       <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
         <h3 class="text-emerald-400 font-semibold mb-1 text-sm">Merge direto</h3>
-        <p class="text-neutral-400 text-sm">Quando: feature pequena, testada, sem necessidade de review externo. Faça rebase para manter histórico limpo, então merge.</p>
+        <p class="text-neutral-400 text-sm">Quando: feature pequena, testada, sem necessidade de review externo. Faça rebase para manter histórico limpo, entêo merge.</p>
       </div>
       <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
         <h3 class="text-blue-400 font-semibold mb-1 text-sm">Abrir PR</h3>
-        <p class="text-neutral-400 text-sm">Quando: feature maior, precisa de review de equipe, ou é uma contribuição para repositório compartilhado. Push e abertura de PR com descrição completa.</p>
+        <p class="text-neutral-400 text-sm">Quando: feature maior, precisa de review de equipe, ou é uma contribuiçêo para repositório compartilhado. Push e abertura de PR com descriçêo completa.</p>
       </div>
       <div class="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
         <h3 class="text-red-400 font-semibold mb-1 text-sm">Descarte</h3>
-        <p class="text-neutral-400 text-sm">Quando: a abordagem não funcionou ou a feature foi cancelada. Remove a worktree e a branch sem merge.</p>
+        <p class="text-neutral-400 text-sm">Quando: a abordagem nêo funcionou ou a feature foi cancelada. Remove a worktree e a branch sem merge.</p>
       </div>
     </div>
     <div class="bg-dark-700/50 rounded-lg p-4">
@@ -141,39 +141,39 @@ git worktree add ../projeto-auth-oauth -b feature/auth-oauth
     <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5 mb-5">
       <h3 class="text-emerald-400 font-semibold mb-3">Exemplo: 3 worktrees ativas</h3>
       <div class="space-y-2 text-neutral-300 text-sm font-mono">
-        <p class="text-neutral-500"># Agente 1 — feature de autenticação</p>
+        <p class="text-neutral-500"># Agente 1 — feature de autenticaçêo</p>
         <p>~/projetos/meuapp-auth-oauth/</p>
         <p class="text-neutral-500"># Agente 2 — dashboard de métricas</p>
         <p>~/projetos/meuapp-dashboard-metrics/</p>
-        <p class="text-neutral-500"># Agente 3 — correção de bug crítico</p>
+        <p class="text-neutral-500"># Agente 3 — correçêo de bug crítico</p>
         <p>~/projetos/meuapp-fix-login-timeout/</p>
       </div>
     </div>
     <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
       <p class="text-yellow-400 font-semibold text-sm">Limite prático</p>
-      <p class="text-neutral-300 text-sm mt-1">3-5 worktrees simultâneas é o sweet spot para a maioria dos projetos. Acima disso, o overhead de coordenação (monitorar múltiplos agentes) tende a superar o ganho de velocidade.</p>
+      <p class="text-neutral-300 text-sm mt-1">3-5 worktrees simultâneas é o sweet spot para a maioria dos projetos. Acima disso, o overhead de coordenaçêo (monitorar múltiplos agentes) tende a superar o ganho de velocidade.</p>
     </div>
   </section>
 
   <section class="bg-dark-800 rounded-xl border border-dark-600 p-8">
     <div class="flex items-center space-x-4 mb-6">
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">5</span>
-      <h2 class="text-2xl font-bold">⚔️ Resolução de conflitos ao integrar branches</h2>
+      <h2 class="text-2xl font-bold">⚔️ Resoluçêo de conflitos ao integrar branches</h2>
     </div>
-    <p class="text-neutral-300 mb-6">Quando múltiplas features tocam nos mesmos arquivos, conflitos de merge são inevitáveis. A chave é distinguir conflitos sintáticos (que o git detecta) de conflitos semânticos (que o git não detecta mas que quebram o comportamento).</p>
+    <p class="text-neutral-300 mb-6">Quando múltiplas features tocam nos mesmos arquivos, conflitos de merge sêo inevitáveis. A chave é distinguir conflitos sintáticos (que o git detecta) de conflitos semânticos (que o git nêo detecta mas que quebram o comportamento).</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
       <div class="bg-dark-700/50 rounded-lg p-4">
         <h3 class="text-yellow-400 font-semibold mb-2 text-sm">Conflito sintático</h3>
-        <p class="text-neutral-400 text-sm">Git detecta e marca com &lt;&lt;&lt;. Resolva manualmente escolhendo a versão correta ou combinando as duas. Verifique os testes após resolver.</p>
+        <p class="text-neutral-400 text-sm">Git detecta e marca com &lt;&lt;&lt;. Resolva manualmente escolhendo a versêo correta ou combinando as duas. Verifique os testes após resolver.</p>
       </div>
       <div class="bg-dark-700/50 rounded-lg p-4">
         <h3 class="text-red-400 font-semibold mb-2 text-sm">Conflito semântico</h3>
-        <p class="text-neutral-400 text-sm">Git não detecta. Feature A muda comportamento de função X; Feature B usa função X com a suposição antiga. Testes de integração capturam isso.</p>
+        <p class="text-neutral-400 text-sm">Git nêo detecta. Feature A muda comportamento de funçêo X; Feature B usa funçêo X com a suposiçêo antiga. Testes de integraçêo capturam isso.</p>
       </div>
     </div>
     <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
       <p class="text-emerald-400 font-semibold text-sm">Protocolo pós-merge</p>
-      <p class="text-neutral-300 text-sm mt-1">Após qualquer merge com conflito: execute o suite de testes completo, não apenas os testes da feature. Conflitos semânticos aparecem em testes de integração, não nos testes unitários da feature.</p>
+      <p class="text-neutral-300 text-sm mt-1">Após qualquer merge com conflito: execute o suite de testes completo, nêo apenas os testes da feature. Conflitos semânticos aparecem em testes de integraçêo, nêo nos testes unitários da feature.</p>
     </div>
   </section>
 
@@ -195,7 +195,7 @@ git worktree add ../projeto-auth-oauth -b feature/auth-oauth
       </ol>
     </div>
     <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
-      <p class="text-emerald-400 font-semibold text-sm">Critério de conclusão</p>
+      <p class="text-emerald-400 font-semibold text-sm">Critério de conclusêo</p>
       <p class="text-neutral-300 text-sm mt-1">Feature mergeada com sucesso, conflito resolvido corretamente, testes completos passando, worktree limpa. Você domina o fluxo de worktree do início ao fim.</p>
     </div>
   </section>
@@ -208,7 +208,7 @@ git worktree add ../projeto-auth-oauth -b feature/auth-oauth
       <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Conheço os critérios para merge, PR ou descarte de branch</span></div>
       <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Sei gerenciar múltiplas worktrees simultâneas com limite prático</span></div>
       <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Distingo e resolvo conflitos sintáticos e semânticos</span></div>
-      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Completei o fluxo completo de worktree: criação → feature → merge → limpeza</span></div>
+      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Completei o fluxo completo de worktree: criaçêo → feature → merge → limpeza</span></div>
     </div>
     <div class="flex items-center justify-between p-4 bg-dark-800 rounded-lg mb-4">
       <span class="text-neutral-400 text-sm">Próximo módulo: <strong class="text-neutral-100">1.9 — Agentes paralelos</strong></span>

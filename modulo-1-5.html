@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Módulo 1.5 — Execução com Subagentes | Superpowers</title>
+  <title>Módulo 1.5 — Execuçêo com Subagentes | Superpowers</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#FACC15',dark:{900:'#111827',800:'#1f2937',700:'#374151',600:'#4b5563'}}}}}</script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -42,8 +42,8 @@
 
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
   <div class="mb-4"><span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 uppercase tracking-wider">MÓDULO 1.5</span></div>
-  <h1 class="text-3xl font-extrabold mb-3">🤖 Execução: subagentes e planos</h1>
-  <p class="text-neutral-400 text-lg mb-6">Deixe o agente trabalhar por horas autonomamente sem desviar do plano — com subagentes e revisão em dois estágios.</p>
+  <h1 class="text-3xl font-extrabold mb-3">🤖 Execuçêo: subagentes e planos</h1>
+  <p class="text-neutral-400 text-lg mb-6">Deixe o agente trabalhar por horas autonomamente sem desviar do plano — com subagentes e revisêo em dois estágios.</p>
   <div class="flex flex-wrap gap-4 text-sm">
     <span class="flex items-center space-x-1 text-neutral-500"><span>📋</span><span>6 tópicos</span></span>
     <span class="flex items-center space-x-1 text-neutral-500"><span>⏱️</span><span>~35 min</span></span>
@@ -59,7 +59,7 @@
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">1</span>
       <h2 class="text-2xl font-bold">📦 executing-plans: lotes com checkpoints humanos</h2>
     </div>
-    <p class="text-neutral-300 mb-6">A skill executing-plans organiza a execução do plano em lotes de tarefas — tipicamente 3-5 tarefas por lote. Após cada lote, o agente para e apresenta um resumo do que foi feito, o que verificou e o que planeja fazer no próximo lote. Você aprova antes de continuar.</p>
+    <p class="text-neutral-300 mb-6">A skill executing-plans organiza a execuçêo do plano em lotes de tarefas — tipicamente 3-5 tarefas por lote. Após cada lote, o agente para e apresenta um resumo do que foi feito, o que verificou e o que planeja fazer no próximo lote. Você aprova antes de continuar.</p>
     <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-5 mb-5">
       <h3 class="text-emerald-400 font-semibold mb-3">Estrutura de um lote</h3>
       <div class="space-y-2 text-neutral-300 text-sm">
@@ -67,11 +67,11 @@
         <div class="text-center text-neutral-500 text-xs">↓ checkpoint: você revisa e aprova</div>
         <div class="bg-dark-700/50 rounded p-2"><strong>Lote 2 (tarefas 4-6):</strong> Lógica de negócio</div>
         <div class="text-center text-neutral-500 text-xs">↓ checkpoint: você revisa e aprova</div>
-        <div class="bg-dark-700/50 rounded p-2"><strong>Lote 3 (tarefas 7-9):</strong> Integração e testes</div>
+        <div class="bg-dark-700/50 rounded p-2"><strong>Lote 3 (tarefas 7-9):</strong> Integraçêo e testes</div>
       </div>
     </div>
     <div class="bg-dark-700/50 rounded-lg p-4">
-      <p class="text-neutral-300 text-sm">O tamanho do lote é configurável. Lotes menores = mais controle, mais interrupções. Lotes maiores = menos controle, mais autonomia. O padrão de 3-5 tarefas equilibra os dois.</p>
+      <p class="text-neutral-300 text-sm">O tamanho do lote é configurável. Lotes menores = mais controle, mais interrupções. Lotes maiores = menos controle, mais autonomia. O padrêo de 3-5 tarefas equilibra os dois.</p>
     </div>
   </section>
 
@@ -103,21 +103,21 @@
     </div>
     <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
       <p class="text-blue-400 font-semibold text-sm">Vantagem do contexto isolado</p>
-      <p class="text-neutral-300 text-sm mt-1">Um agente com contexto longo começa a "esquecer" instruções iniciais e a misturar informações de diferentes tarefas. Subagentes frescos mantêm foco e não acumulam confusão.</p>
+      <p class="text-neutral-300 text-sm mt-1">Um agente com contexto longo começa a "esquecer" instruções iniciais e a misturar informações de diferentes tarefas. Subagentes frescos mantêm foco e nêo acumulam confusêo.</p>
     </div>
   </section>
 
   <section class="bg-dark-800 rounded-xl border border-dark-600 p-8">
     <div class="flex items-center space-x-4 mb-6">
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">3</span>
-      <h2 class="text-2xl font-bold">🔍 Revisão em 2 estágios: spec e qualidade</h2>
+      <h2 class="text-2xl font-bold">🔍 Revisêo em 2 estágios: spec e qualidade</h2>
     </div>
-    <p class="text-neutral-300 mb-6">A revisão em dois estágios separa critérios que, se misturados, criam confusão. No primeiro estágio, o revisor verifica conformidade com a spec — se o comportamento implementado corresponde ao que foi especificado. No segundo, verifica qualidade técnica — código limpo, sem smells, com boas práticas.</p>
+    <p class="text-neutral-300 mb-6">A revisêo em dois estágios separa critérios que, se misturados, criam confusêo. No primeiro estágio, o revisor verifica conformidade com a spec — se o comportamento implementado corresponde ao que foi especificado. No segundo, verifica qualidade técnica — código limpo, sem smells, com boas práticas.</p>
     <div class="space-y-4 mb-5">
       <div class="bg-dark-700/50 rounded-lg p-5">
         <h3 class="text-emerald-400 font-semibold mb-2">Estágio 1: Conformidade com spec</h3>
         <ul class="space-y-1 text-neutral-300 text-sm">
-          <li>• Todos os critérios de aceitação implementados?</li>
+          <li>• Todos os critérios de aceitaçêo implementados?</li>
           <li>• Casos de borda cobertos?</li>
           <li>• Comportamento em erros definido na spec?</li>
           <li>• Nada fora do escopo adicionado?</li>
@@ -127,7 +127,7 @@
         <h3 class="text-blue-400 font-semibold mb-2">Estágio 2: Qualidade técnica</h3>
         <ul class="space-y-1 text-neutral-300 text-sm">
           <li>• Código legível e bem nomeado?</li>
-          <li>• Sem duplicação desnecessária?</li>
+          <li>• Sem duplicaçêo desnecessária?</li>
           <li>• Testes cobrem casos relevantes?</li>
           <li>• Performance adequada para o contexto?</li>
         </ul>
@@ -135,7 +135,7 @@
     </div>
     <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-4">
       <p class="text-yellow-400 font-semibold text-sm">Por que separar os dois estágios</p>
-      <p class="text-neutral-300 text-sm mt-1">Um código pode ser tecnicamente excelente mas não cumprir a spec — e deve ser rejeitado. Um código pode cumprir a spec mas ser de qualidade ruim — e deve ser refatorado antes do merge. Critérios diferentes, prioridades diferentes.</p>
+      <p class="text-neutral-300 text-sm mt-1">Um código pode ser tecnicamente excelente mas nêo cumprir a spec — e deve ser rejeitado. Um código pode cumprir a spec mas ser de qualidade ruim — e deve ser refatorado antes do merge. Critérios diferentes, prioridades diferentes.</p>
     </div>
   </section>
 
@@ -144,7 +144,7 @@
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">4</span>
       <h2 class="text-2xl font-bold">🧭 Quando usar executing-plans vs. subagents</h2>
     </div>
-    <p class="text-neutral-300 mb-6">Não existe uma resposta universal — a escolha depende do tipo de plano e do nível de autonomia desejado. Entender os trade-offs permite escolher o modo certo para cada situação.</p>
+    <p class="text-neutral-300 mb-6">Nêo existe uma resposta universal — a escolha depende do tipo de plano e do nível de autonomia desejado. Entender os trade-offs permite escolher o modo certo para cada situaçêo.</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
       <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
         <h3 class="text-emerald-400 font-semibold mb-2 text-sm">Use executing-plans quando:</h3>
@@ -158,7 +158,7 @@
       <div class="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
         <h3 class="text-blue-400 font-semibold mb-2 text-sm">Use subagents quando:</h3>
         <ul class="space-y-1 text-neutral-300 text-sm">
-          <li>• Tarefas são independentes entre si</li>
+          <li>• Tarefas sêo independentes entre si</li>
           <li>• Você quer máxima velocidade</li>
           <li>• O plano está bem definido e estável</li>
           <li>• Feature de baixo risco e bem testada</li>
@@ -166,7 +166,7 @@
       </div>
     </div>
     <div class="bg-dark-700/50 rounded-lg p-4">
-      <p class="text-neutral-300 text-sm">Para projetos novos, comece com executing-plans até ganhar confiança no plano e no processo. Subagents são mais eficientes mas requerem planos mais maduros.</p>
+      <p class="text-neutral-300 text-sm">Para projetos novos, comece com executing-plans até ganhar confiança no plano e no processo. Subagents sêo mais eficientes mas requerem planos mais maduros.</p>
     </div>
   </section>
 
@@ -175,14 +175,14 @@
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">5</span>
       <h2 class="text-2xl font-bold">👁️ Monitorando e corrigindo subagentes</h2>
     </div>
-    <p class="text-neutral-300 mb-6">Subagentes trabalham autonomamente, mas isso não significa que devem ser ignorados. Monitoramento ativo permite detectar desvios cedo e intervir sem perder o contexto do plano maior. Os sinais de desvio são específicos e reconhecíveis.</p>
+    <p class="text-neutral-300 mb-6">Subagentes trabalham autonomamente, mas isso nêo significa que devem ser ignorados. Monitoramento ativo permite detectar desvios cedo e intervir sem perder o contexto do plano maior. Os sinais de desvio sêo específicos e reconhecíveis.</p>
     <div class="bg-dark-700/50 rounded-lg p-5 mb-5">
       <h3 class="text-neutral-300 font-semibold mb-3">Sinais de que um subagente está desviando</h3>
       <ul class="space-y-2 text-neutral-300 text-sm">
         <li class="flex items-start space-x-2"><span class="text-red-400">⚠</span><span>Relatório com "implementei algo similar ao que foi pedido"</span></li>
-        <li class="flex items-start space-x-2"><span class="text-red-400">⚠</span><span>Menção de arquivos que não estavam no plano original</span></li>
-        <li class="flex items-start space-x-2"><span class="text-red-400">⚠</span><span>Tempo de execução muito maior que o esperado (2-5 min)</span></li>
-        <li class="flex items-start space-x-2"><span class="text-red-400">⚠</span><span>Resultado que não inclui o critério de verificação passando</span></li>
+        <li class="flex items-start space-x-2"><span class="text-red-400">⚠</span><span>Mençêo de arquivos que nêo estavam no plano original</span></li>
+        <li class="flex items-start space-x-2"><span class="text-red-400">⚠</span><span>Tempo de execuçêo muito maior que o esperado (2-5 min)</span></li>
+        <li class="flex items-start space-x-2"><span class="text-red-400">⚠</span><span>Resultado que nêo inclui o critério de verificaçêo passando</span></li>
       </ul>
     </div>
     <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
@@ -196,21 +196,21 @@
       <span class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 text-xl font-bold flex items-center justify-center flex-shrink-0">6</span>
       <h2 class="text-2xl font-bold">🛠️ Prática: plano completo com subagentes</h2>
     </div>
-    <p class="text-neutral-300 mb-6">Use o plano aprovado do módulo anterior e execute-o com subagentes. O objetivo é ver o modo de execução mais poderoso do Superpowers em ação, com revisão em dois estágios ao final.</p>
+    <p class="text-neutral-300 mb-6">Use o plano aprovado do módulo anterior e execute-o com subagentes. O objetivo é ver o modo de execuçêo mais poderoso do Superpowers em açêo, com revisêo em dois estágios ao final.</p>
     <div class="bg-dark-700/50 rounded-lg p-5 mb-5">
       <h3 class="text-neutral-300 font-semibold mb-3">Roteiro do exercício</h3>
       <ol class="space-y-3 text-neutral-300 text-sm">
         <li class="flex items-start space-x-2"><span class="text-emerald-400 font-bold flex-shrink-0">1.</span><span>Passe o plano aprovado para o agente coordenador</span></li>
         <li class="flex items-start space-x-2"><span class="text-emerald-400 font-bold flex-shrink-0">2.</span><span>Instrua: <em>"Execute com subagents, uma tarefa por vez, reportando ao final de cada uma"</em></span></li>
         <li class="flex items-start space-x-2"><span class="text-emerald-400 font-bold flex-shrink-0">3.</span><span>Monitore os relatórios de cada subagente — verifique os sinais de desvio</span></li>
-        <li class="flex items-start space-x-2"><span class="text-emerald-400 font-bold flex-shrink-0">4.</span><span>Ao final, execute a revisão estágio 1: conformidade com spec</span></li>
-        <li class="flex items-start space-x-2"><span class="text-emerald-400 font-bold flex-shrink-0">5.</span><span>Execute a revisão estágio 2: qualidade técnica</span></li>
+        <li class="flex items-start space-x-2"><span class="text-emerald-400 font-bold flex-shrink-0">4.</span><span>Ao final, execute a revisêo estágio 1: conformidade com spec</span></li>
+        <li class="flex items-start space-x-2"><span class="text-emerald-400 font-bold flex-shrink-0">5.</span><span>Execute a revisêo estágio 2: qualidade técnica</span></li>
         <li class="flex items-start space-x-2"><span class="text-emerald-400 font-bold flex-shrink-0">6.</span><span>Corrija issues bloqueadoras antes de avançar para o Módulo 1.6</span></li>
       </ol>
     </div>
     <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-lg p-4">
-      <p class="text-emerald-400 font-semibold text-sm">Critério de conclusão</p>
-      <p class="text-neutral-300 text-sm mt-1">Plano executado via subagentes, revisão em dois estágios concluída, issues bloqueadoras resolvidas. O código está pronto para entrar no módulo de debugging (se houver bugs) ou revisão final.</p>
+      <p class="text-emerald-400 font-semibold text-sm">Critério de conclusêo</p>
+      <p class="text-neutral-300 text-sm mt-1">Plano executado via subagentes, revisêo em dois estágios concluída, issues bloqueadoras resolvidas. O código está pronto para entrar no módulo de debugging (se houver bugs) ou revisêo final.</p>
     </div>
   </section>
 
@@ -218,11 +218,11 @@
     <h2 class="text-xl font-bold mb-4">Resumo do Módulo 1.5</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
       <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Entendi como executing-plans organiza lotes com checkpoints</span></div>
-      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Compreendi o padrão subagent-driven-development</span></div>
-      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Sei fazer revisão em 2 estágios: spec e qualidade</span></div>
+      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Compreendi o padrêo subagent-driven-development</span></div>
+      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Sei fazer revisêo em 2 estágios: spec e qualidade</span></div>
       <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Conheço o critério para escolher entre os dois modos</span></div>
       <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Sei monitorar subagentes e identificar sinais de desvio</span></div>
-      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Executei o plano completo com subagentes e revisão</span></div>
+      <div class="flex items-center space-x-2 text-sm"><span class="text-emerald-400">✓</span><span class="text-neutral-300">Executei o plano completo com subagentes e revisêo</span></div>
     </div>
     <div class="flex items-center justify-between p-4 bg-dark-800 rounded-lg mb-4">
       <span class="text-neutral-400 text-sm">Próximo módulo: <strong class="text-neutral-100">1.6 — Debugging sistemático</strong></span>

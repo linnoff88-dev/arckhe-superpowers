@@ -4,15 +4,15 @@ Superpowers é uma metodologia completa de desenvolvimento de software para seus
 
 ## Como funciona
 
-Tudo começa no momento em que você inicializa seu agente de código. Assim que ele percebe que você está construindo algo, ele *não* simplesmente sai escrevendo código. Em vez disso, ele dá um passo atrás e pergunta o que você realmente quer fazer.
+Tudo começa no momento em que você inicializa seu agente de código. Assim que ele percebe que você está construindo algo, ele *nêo* simplesmente sai escrevendo código. Em vez disso, ele dá um passo atrás e pergunta o que você realmente quer fazer.
 
-Depois de extrair uma especificação da conversa, ele a apresenta em partes pequenas o suficiente para você ler e absorver de verdade.
+Depois de extrair uma especificaçêo da conversa, ele a apresenta em partes pequenas o suficiente para você ler e absorver de verdade.
 
-Após você aprovar o design, seu agente monta um plano de implementação claro o bastante para ser seguido por um engenheiro júnior entusiasmado, sem bom gosto, sem julgamento, sem contexto do projeto e com aversão a testes. O plano enfatiza TDD verdadeiro com ciclo vermelho/verde, YAGNI (You Aren't Gonna Need It) e DRY.
+Após você aprovar o design, seu agente monta um plano de implementaçêo claro o bastante para ser seguido por um engenheiro júnior entusiasmado, sem bom gosto, sem julgamento, sem contexto do projeto e com aversêo a testes. O plano enfatiza TDD verdadeiro com ciclo vermelho/verde, YAGNI (You Aren't Gonna Need It) e DRY.
 
-Em seguida, quando você diz "vai", ele inicia um processo de *desenvolvimento orientado a subagentes*, fazendo com que agentes trabalhem em cada tarefa de engenharia, inspecionando e revisando o trabalho deles, e avançando. Não é raro o Claude conseguir trabalhar autonomamente por algumas horas sem desviar do plano que você elaborou.
+Em seguida, quando você diz "vai", ele inicia um processo de *desenvolvimento orientado a subagentes*, fazendo com que agentes trabalhem em cada tarefa de engenharia, inspecionando e revisando o trabalho deles, e avançando. Nêo é raro o Claude conseguir trabalhar autonomamente por algumas horas sem desviar do plano que você elaborou.
 
-Tem muito mais coisa, mas esse é o núcleo do sistema. E como as skills são ativadas automaticamente, você não precisa fazer nada especial. Seu agente de código simplesmente tem Superpowers.
+Tem muito mais coisa, mas esse é o núcleo do sistema. E como as skills sêo ativadas automaticamente, você nêo precisa fazer nada especial. Seu agente de código simplesmente tem Superpowers.
 
 
 ## Patrocínio
@@ -24,9 +24,9 @@ Obrigado!
 - Jesse
 
 
-## Instalação
+## Instalaçêo
 
-**Nota:** A instalação varia conforme a plataforma.
+**Nota:** A instalaçêo varia conforme a plataforma.
 
 ### Marketplace Oficial do Claude Code
 
@@ -73,7 +73,7 @@ Selecione `Install Plugin`
 ### OpenAI Codex App
 
 - No aplicativo Codex, clique em Plugins na barra lateral.
-- Você verá `Superpowers` na seção Coding.
+- Você verá `Superpowers` na seçêo Coding.
 - Clique no `+` ao lado do Superpowers e siga as instruções.
 
 
@@ -95,7 +95,7 @@ Diga ao OpenCode:
 Fetch and follow instructions from https://raw.githubusercontent.com/obra/superpowers/refs/heads/main/.opencode/INSTALL.md
 ```
 
-**Documentação detalhada:** [docs/README.opencode.md](docs/README.opencode.md)
+**Documentaçêo detalhada:** [docs/README.opencode.md](docs/README.opencode.md)
 
 ### GitHub Copilot CLI
 
@@ -118,21 +118,21 @@ gemini extensions update superpowers
 
 ## O Fluxo de Trabalho Básico
 
-1. **brainstorming** - Ativado antes de escrever código. Refina ideias brutas através de perguntas, explora alternativas e apresenta o design em seções para validação. Salva o documento de design.
+1. **brainstorming** - Ativado antes de escrever código. Refina ideias brutas através de perguntas, explora alternativas e apresenta o design em seções para validaçêo. Salva o documento de design.
 
-2. **using-git-worktrees** - Ativado após aprovação do design. Cria um workspace isolado em um novo branch, executa o setup do projeto e verifica uma baseline limpa de testes.
+2. **using-git-worktrees** - Ativado após aprovaçêo do design. Cria um workspace isolado em um novo branch, executa o setup do projeto e verifica uma baseline limpa de testes.
 
-3. **writing-plans** - Ativado com o design aprovado. Divide o trabalho em tarefas pequenas (2 a 5 minutos cada). Cada tarefa tem caminhos de arquivo exatos, código completo e etapas de verificação.
+3. **writing-plans** - Ativado com o design aprovado. Divide o trabalho em tarefas pequenas (2 a 5 minutos cada). Cada tarefa tem caminhos de arquivo exatos, código completo e etapas de verificaçêo.
 
-4. **subagent-driven-development** ou **executing-plans** - Ativado com o plano. Despacha um novo subagente por tarefa com revisão em dois estágios (conformidade com a spec e depois qualidade do código), ou executa em lotes com checkpoints humanos.
+4. **subagent-driven-development** ou **executing-plans** - Ativado com o plano. Despacha um novo subagente por tarefa com revisêo em dois estágios (conformidade com a spec e depois qualidade do código), ou executa em lotes com checkpoints humanos.
 
-5. **test-driven-development** - Ativado durante a implementação. Aplica o ciclo VERMELHO-VERDE-REFATORAR: escrever teste que falha, ver ele falhar, escrever código mínimo, ver ele passar, commitar. Deleta código escrito antes dos testes.
+5. **test-driven-development** - Ativado durante a implementaçêo. Aplica o ciclo VERMELHO-VERDE-REFATORAR: escrever teste que falha, ver ele falhar, escrever código mínimo, ver ele passar, commitar. Deleta código escrito antes dos testes.
 
-6. **requesting-code-review** - Ativado entre tarefas. Revisa em relação ao plano e reporta problemas por severidade. Problemas críticos bloqueiam o progresso.
+6. **requesting-code-review** - Ativado entre tarefas. Revisa em relaçêo ao plano e reporta problemas por severidade. Problemas críticos bloqueiam o progresso.
 
-7. **finishing-a-development-branch** - Ativado quando as tarefas são concluídas. Verifica os testes, apresenta opções (merge/PR/manter/descartar) e limpa a worktree.
+7. **finishing-a-development-branch** - Ativado quando as tarefas sêo concluídas. Verifica os testes, apresenta opções (merge/PR/manter/descartar) e limpa a worktree.
 
-**O agente verifica as skills relevantes antes de qualquer tarefa.** Fluxos obrigatórios, não sugestões.
+**O agente verifica as skills relevantes antes de qualquer tarefa.** Fluxos obrigatórios, nêo sugestões.
 
 ## O Que Está Incluído
 
@@ -145,33 +145,33 @@ gemini extensions update superpowers
 - **systematic-debugging** - Processo de causa raiz em 4 fases (inclui técnicas de rastreamento de causa raiz, defesa em profundidade e espera baseada em condições)
 - **verification-before-completion** - Garante que o problema foi realmente corrigido
 
-**Colaboração**
+**Colaboraçêo**
 - **brainstorming** - Refinamento de design socrático
-- **writing-plans** - Planos de implementação detalhados
-- **executing-plans** - Execução em lotes com checkpoints
+- **writing-plans** - Planos de implementaçêo detalhados
+- **executing-plans** - Execuçêo em lotes com checkpoints
 - **dispatching-parallel-agents** - Fluxos de trabalho com subagentes concorrentes
-- **requesting-code-review** - Checklist pré-revisão
+- **requesting-code-review** - Checklist pré-revisêo
 - **receiving-code-review** - Respondendo ao feedback
 - **using-git-worktrees** - Branches de desenvolvimento paralelo
-- **finishing-a-development-branch** - Fluxo de decisão merge/PR
-- **subagent-driven-development** - Iteração rápida com revisão em dois estágios (conformidade com a spec e qualidade do código)
+- **finishing-a-development-branch** - Fluxo de decisêo merge/PR
+- **subagent-driven-development** - Iteraçêo rápida com revisêo em dois estágios (conformidade com a spec e qualidade do código)
 
 **Meta**
 - **writing-skills** - Crie novas skills seguindo as melhores práticas (inclui metodologia de teste)
-- **using-superpowers** - Introdução ao sistema de skills
+- **using-superpowers** - Introduçêo ao sistema de skills
 
 ## Filosofia
 
 - **Desenvolvimento Orientado a Testes** - Escreva testes primeiro, sempre
-- **Sistemático ao invés de ad-hoc** - Processo ao invés de adivinhação
-- **Redução de complexidade** - Simplicidade como objetivo principal
+- **Sistemático ao invés de ad-hoc** - Processo ao invés de adivinhaçêo
+- **Reduçêo de complexidade** - Simplicidade como objetivo principal
 - **Evidência ao invés de afirmações** - Verifique antes de declarar sucesso
 
 Leia [o anúncio original de lançamento](https://blog.fsck.com/2025/10/09/superpowers/).
 
 ## Contribuindo
 
-O processo geral de contribuição para o Superpowers está abaixo. Tenha em mente que geralmente não aceitamos contribuições de novas skills e que qualquer atualização de skills deve funcionar em todos os agentes de código que suportamos.
+O processo geral de contribuiçêo para o Superpowers está abaixo. Tenha em mente que geralmente nêo aceitamos contribuições de novas skills e que qualquer atualizaçêo de skills deve funcionar em todos os agentes de código que suportamos.
 
 1. Faça um fork do repositório
 2. Mude para o branch 'dev'
@@ -183,7 +183,7 @@ Veja `skills/writing-skills/SKILL.md` para o guia completo.
 
 ## Atualizando
 
-As atualizações do Superpowers dependem um pouco do agente de código, mas geralmente são automáticas.
+As atualizações do Superpowers dependem um pouco do agente de código, mas geralmente sêo automáticas.
 
 ## Licença
 
